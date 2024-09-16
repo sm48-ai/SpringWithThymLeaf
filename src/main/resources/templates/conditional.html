@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Welcome to conditional World</h2>
+	<p th:if="${myno1>myno2}">
+		<span th:text="${myno1}+ ' is greater than '+${myno2}"></span>
+
+	</p>
+	<p th:if="${myno1<myno2}">
+		<span th:text="${myno2}+ ' is greater than '+${myno1}"></span>
+
+	</p>
+	<h2>  
+	   <span th:text="${myno1+myno2}"></span>
+	</h2>
+
+
+</body>
+</html>
